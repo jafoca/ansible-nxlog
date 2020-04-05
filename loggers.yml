@@ -1,0 +1,5 @@
+---
+- hosts: windows
+  roles:
+    - ansible-sysmon
+    - { role: nxlog, nxlog_omtcp_host: "10.100.0.45", nxlog_eventlog: true }
